@@ -11,8 +11,9 @@
     <title>Tailwind website</title>
   </head>
   <body >
-    <div class=" w-11/12 mx-auto lg:max-w-screen-xl ">
-      <nav class="flex content-center h-20 pt-4 pb-4  justify-between">
+    <div class="w-11/12 mx-auto lg:max-w-screen-xl ">
+      <div>
+      <nav class=" hidden  lg:flex content-center justify-between mb-3">
         <img class="h-10" src="../img/logo (1).png" alt="Microsoft" class="logo" />
      
         <ul class="flex flex-1 ">
@@ -39,17 +40,21 @@
       </nav>
 
       <!-- Showcase-->
-      <header class="showcase">
-        <h2>Surface Deals</h2>
-        <p>
-          Select Surfaces are on sale now -save while supplies last
-        </p>
-        <a href="#" class="btn">
-          Shop now <i class="fas fa-chevron-right"></i>
-        </a>
+      <header class="flex flex-col items-center text-center justify-end pb-12 mb-8 xl: w-full " style="background :url(../img/slide1.png) no-repeat center center/cover; height: 400px;">
+   
+
+          <h2 class="text-2xl font-bold">Surface Deals</h2>
+          <p>
+            Select Surfaces are on sale now -save while supplies last
+          </p>
+          <a href="#" class="btn bg-black text-white p-3 mt-2 font-bold px-4">
+            Shop now <i class="fas fa-chevron-right"></i>
+          </a>
+        
       </header>
+    </div>
       <!-- Home cards -->
-      <section class="grid grid-cols-1  gap-4  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 pb-5 xl:grid-cols-4 " >
+      <section class="grid grid-cols-1  gap-4 mb-8  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 pb-5 xl:grid-cols-4 " >
         <div  >
              <img class=" object-cover w-full " src="https://i.ibb.co/LZPVKq9/card1.png" alt="">
 
@@ -90,14 +95,14 @@
       </section>
   
       <!-- Xbox -->
-      <section class="w-full  mb-20 " >
-        <div  class="h-56" style="background: url(../img/xbox.png);  background-repeat: no-repeat ; background-size: cover; ">
-        <div class="pl-6 pt-12 md:w-5/12 md:pt-4 lg:w-5/12 pt-6">
-          <h2 class="font-bold tracking-wide text-xs mb-2">Xbox Game Pass Ultimate</h2>
+      <section  class="pb-8" >
+        <div style="background: url(../img/xbox.png) no-repeat center center/cover ; height: 350px; ">
+        <div class="pl-8 pt-16  md:w-5/12 md:pt-16 lg:w-5/12 lg:pt-16">
+          <h2 class="font-bold tracking-wide text-2xl mb-2 ">Xbox Game Pass Ultimate</h2>
           <p class="hidden md:block "> Xbox Game Pass Ultimate Xbox Live Gold and over 100 high-quality
             console and PC games. Play together with friends and discover your
             next favorite game.</p>
-            <a href="#" class="btn bg-black text-white rounded-none inline-block text-sm p-4 text-bold align-middle mt-6">
+            <a href="#" class="btn bg-black text-white rounded-none inline-block  p-3 px-3 font-bold mt-6">
               Join Now <i class="fas fa-chevron-right"></i>
             </a>
         </div>
@@ -105,7 +110,7 @@
       </section>
   
       <!-- Home cards 2 -->
-              <section class="grid grid-cols-1  gap-4  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 pb-5 xl:grid-cols-4 ">
+              <section class="grid grid-cols-1  gap-4 mb-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 pb-5 xl:grid-cols-4 ">
                   <div>
                       <img class=" object-cover w-full " src="https://i.ibb.co/zVqhWn2/card5.png" alt="" />
                       <h3 class="font-bold tracking-wide text-xl">Microsoft Teams</h3>
@@ -142,11 +147,12 @@
         </section>
         
         <!-- Carbon -->
-        <section class=" mx-auto mt-10 mb-10 ">
+        <section class=" mx-auto mt-10 mb-8 ">
           <div  style="background: url(../img/carbon.jpg); height: 350px; background-repeat: no-repeat ; background-size: cover; ">
-            <div class="w-2/4 pt-12 pl-8">
+            <div class="w-10/12 pt-12 pl-8 md:w-8/12 lg:w-8/12">
             <h2 class="text-xl text-white font-bold">Commiting To Carbon Negative</h2>
-            <p class=" text-sm text-white mt-3">Microsoft will be carbon negative by 2030 and by 2050 we will remove
+            <p class=" text-sm text-white mt-3">Microsoft will be carbon negative 
+              by 2030 and by 2050 we will remove
               all carbon the company has emitted since it was founded in 1975</p>
               <a href="#" class="btn bg-gray-200 text-black rounded-none inline-block text-sm p-2 text-bold align-middle mt-6" >
                 Learn More <i class="fas fa-chevron-right"></i>
@@ -156,7 +162,7 @@
         </section>
   
         <!-- Follow -->
-        <section class=" mx-auto mt-10 mb-10 ">
+        <section class=" mx-auto mt-10 mb-8 ">
           <div class="flex space-x-5" >
 
             <p>Follow Microsoft</p>
