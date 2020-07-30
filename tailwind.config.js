@@ -1,11 +1,15 @@
 module.exports = {
   purge: [],
   theme: {
-    colors: {
-      nicewhite: '#f2f2f2',
+    extend:{
+      colors: {
+        'footerwhite': '#f2f2f2',
+        'footer-text-color ':'#616161',
      
-    
+      }
     }
+  
+  
   },
   variants: {},
   plugins: [],

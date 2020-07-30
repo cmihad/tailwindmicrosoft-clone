@@ -8,21 +8,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
     <link rel="stylesheet" href="build/tailwind.css" />
-    <title>Microsoft Official Homepage</title>
+    <title>Tailwind website</title>
   </head>
   <body >
-    <div class=" w-11/12 mx-auto ">
-      <nav class="main-nav">
-        <img src="img/logo (1).png" alt="Microsoft" class="logo" />
-        <ul class="main-menu">
-          <li><a href="#">Office</a></li>
-          <li><a href="#">Windows</a></li>
-          <li><a href="#">Surface</a></li>
-          <li><a href="#">Xbox</a></li>
-          <li><a href="#">Deals</a></li>
-          <li><a href="#">Support</a></li>
+    <div class=" w-11/12 mx-auto lg:max-w-screen-xl ">
+      <nav class="flex content-center h-20 pt-4 pb-4  justify-between">
+        <img class="h-10" src="../img/logo (1).png" alt="Microsoft" class="logo" />
+     
+        <ul class="flex flex-1 ">
+          <li class="py-0 px-6 text-sm"><a href="#">Office</a></li>
+          <li class="py-0 px-6"><a href="#">Windows</a></li>
+          <li class="py-0 px-6"><a href="#">Surface</a></li>
+          <li class="py-0 px-6"><a href="#">Xbox</a></li>
+          <li ><a href="#">Deals</a></li>
+          <li class="py-0 px-6"><a href="#">Support</a></li>
         </ul>
-        <ul class="right-menu">
+        <ul class=" flex">
           <li>
             <a href="#">
               <i class="fas fa-search"> </i>
@@ -34,6 +35,7 @@
             </a>
           </li>
         </ul>
+      
       </nav>
 
       <!-- Showcase-->
@@ -61,11 +63,11 @@
         <div>
           <img class="object-cover w-full " src="https://i.ibb.co/KjGFHVJ/card2.png" alt="" />
           <h3 class="font-bold tracking-wide text-xl">New Surface Laptop 3</h3>
-          <p>
+          <p >
             Express yourself powerfully with a thin, light, and elegant design,
             faster performance, and up to 11.5 hours battery life.
           </p>
-          <a href="#" class="text-blue-600 font-semibold">Learn More <i class="fas fa-chevron-right"></i></a>
+          <a href="#" class="text-blue-600 font-semibold"><span class="text-gra"> Learn More </span> <i class="fas fa-chevron-right"></i></a>
         </div>
         <div>
           <img class="object-cover w-full " src="https://i.ibb.co/2cnshH6/card3.png" alt="" />
@@ -171,12 +173,12 @@
         </section>
       </div>
         <!-- Links -->
-        <div class="bg-nicewhite">
-        <div class="w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+        <div class="bg-footerwhite">
+        <div class="w-11/12 mx-auto">
         <section class="links ">
-          <div class="links-inner pb-8">
-            <ul class="pb-16">
-              <li><h3>What's New</h3></li>
+          <div class="links-inner pb-8 grid grid-cols-1 gap-8 pt-10 md:grid-cols-2 lg:grid-cols-6 xl:grid-cols-6">
+            <ul >
+              <li><h3 class="bg-footer text color text-xl font-bold">What's New</h3></li>
               <li><a href="#">Surface Pro X</a></li>
               <li><a href="#">Surface Laptop 3</a></li>
               <li><a href="#">Surface Pro 7</a></li>
@@ -184,7 +186,7 @@
               <li><a href="#">Office apps</a></li>
             </ul>
             <ul>
-              <li><h3>Microsoft Store</h3></li>
+              <li><h3 class="bg-footer text color text-xl font-bold">Microsoft Store</h3></li>
               <li><a href="#">Account Profile</a></li>
               <li><a href="#">Download Center</a></li>
               <li><a href="#">Microsoft Store support</a></li>
@@ -192,7 +194,7 @@
               <li><a href="#">Older tracking</a></li>
             </ul>
             <ul>
-              <li><h3>Education</h3></li>
+              <li><h3 class="bg-footer text color text-xl font-bold">Education</h3></li>
               <li><a href="#">Microsfot in education</a></li>
               <li><a href="#">Office for students</a></li>
               <li><a href="#">Office 365 for schools</a></li>
@@ -200,7 +202,7 @@
               <li><a href="#">Microsfot Azure</a></li>
             </ul>
             <ul>
-              <li><h3>Enterprise</h3></li>
+              <li><h3 class="bg-footer text color text-xl font-bold">Enterprise</h3></li>
               <li><a href="#">Azure</a></li>
               <li><a href="#">AppSource</a></li>
               <li><a href="#">Automotive</a></li>
@@ -208,7 +210,7 @@
               <li><a href="#">Healthcare</a></li>
             </ul>
             <ul>
-              <li><h3>Developer</h3></li>
+              <li><h3 class="bg-footer text color text-xl font-bold">Developer</h3></li>
               <li><a href="#">Visual Studio</a></li>
               <li><a href="#">Windowszs Dev Center</a></li>
               <li><a href="#">Developer Network</a></li>
@@ -216,7 +218,7 @@
               <li><a href="#">Microsoft Developer</a></li>
             </ul>
             <ul>
-              <li><h3>Company</h3></li>
+              <li><h3 class="bg-footer text color text-xl font-bold">Company</h3></li>
               <li><a href="#">Careers</a></li>
               <li><a href="#">About Microsoft</a></li>
               <li><a href="#">Company news</a></li>
